@@ -20,4 +20,10 @@ const worker = [
     {name: 'Scott Estrada',role: 'Developer',image: 'scott-estrada-developer.jpg'},
     {name: 'Barbara Ramos',role: 'Graphic Designer',image: 'barbara-ramos-graphic-designer.jpg'},
 ]
-console.table(worker);
+
+for( i= 0;i<worker.length;i++){
+    const currentWorker = worker[i];
+
+    console.log(`${currentWorker.name} ${currentWorker.role} ${currentWorker.image}`);
+
+}
