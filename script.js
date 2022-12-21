@@ -11,7 +11,7 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potete usare lo screen in allegato 
 come spunto */
-
+const test = document.getElementById('test');
 const worker = [
     {name: 'Wayne Barnett',role: 'Founder e CEO',image: 'wayne-barnett-founder-ceo.jpg'},
     {name: 'Angela Caroll',role: 'Chief Editor',image: 'angela-caroll-chief-editor.jpg'},
@@ -23,7 +23,6 @@ const worker = [
 
 for( i= 0;i<worker.length;i++){
     const currentWorker = worker[i];
-
     console.log(`${currentWorker.name} ${currentWorker.role} ${currentWorker.image}`);
-
+    test.innerHTML += `<b>Name</b>:${currentWorker.name} <b>Role:</b> ${currentWorker.role} <b>Image:</b>${currentWorker.image}<br>`;
 }
