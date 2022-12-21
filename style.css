@@ -5,5 +5,34 @@
   }
   body {
     font-family: sans-serif;
-    padding-top: 50px;
+    background-color: rgb(245,245,241)
+  }
+  .container{
+    padding: 100px 0;
+    margin: 0 auto;
+    height: auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  .title{
+    margin-bottom: 25px;
+  }
+  .subtitle{
+    padding: 0 150px;
+  }
+  .row{
+    padding-top:100px;
+    display: flex;
+    flex-wrap:wrap;
+  }
+  .column{
+    display: flex;
+    flex-direction:column ;
+    flex-basis: calc(100%/3);
+    
+  }
+  .card{
+    padding: 0 0 100px 0;
+    background-color: white;
+    max-height: 600px;
   }
